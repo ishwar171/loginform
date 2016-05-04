@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>TASK</title>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="fonts/font-awesome-4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/task.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			function showsignup(){
+				$("#login").hide();
+   				$("#signup").show();
+			}
+			function showlogin(){
+   				$("#signup").hide();
+   				$("#login").show();
+			}
+			$( document ).ready(function() {
+   				showsignup();
+			});
+		</script>
+	</head>
+	<body class="maincontent">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-2"></div>
+						<div class="col-md-8 contentcolumns">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="signup animated slideInRight shake" id="signup">
+										<h4>SIGN UP</h4><br>
+									  	<!--<input name="username" placeholder="Full Name" class="form-control" type="text"><br>
+									  	<input name="email" placeholder="E-Mail Address"  class="form-control" type="text"><br>
+									 	<input name="password" placeholder="Password"  class="form-control" type="password"><br>---->
+									 	<form action="#">
+									      	<div class="input-group input-group-lg">	
+									        	<input type="text" class="form-control fullname" placeholder="Full Name">
+									         	<span class="input-group-addon usericon"><i class="fa fa-user"></i></span>
+									       </div>
+									        <br>
+									        <div class="input-group input-group-lg">	
+									        	<input type="text" class="form-control fullname" placeholder="E-mail Address">
+									         	<span class="input-group-addon usericon"><i class="fa fa-envelope"></i></span>
+									       </div>
+									       <br>
+									        <div class="input-group input-group-lg">
+									          
+									          <input type="password" class="form-control fullname" placeholder="Password">
+									           <span class="input-group-addon usericon"><i class="fa fa-lock"></i></span>
+									        </div>
+									        <br>
+									  	<button class="btn btn-default col-md-5 pull-right signbtn1">SIGN UP</button>
+									  </form>
+									</div>
+									<h3>Don't Have an account?</h3>
+									<p>Bangio tote bag bicycle rights, High Life sartorial cray craft beer whatever  street art fap</p>
+									<br>
+									<button class="btn btn-default signbtn" onclick="showsignup();">SIGN UP</button>
+									
+								</div>
+								<div class="col-md-6">
+									<h3>Don't Have an account?</h3>
+									<p>Bangio tote bag bicycle rights, High Life sartorial cray craft beer whatever  street art fap</p>
+									<br>
+									<button class="btn btn-default loginbtn" onclick="showlogin();">Log In</button>
+									<div class="login animated slideInLeft shake" id="login">
+										<h4>LOGIN</h4><br>
+									  	<form action="#">
+											
+									      	<div class="input-group input-group-lg">	
+									        	<input type="text" class="form-control fullname" placeholder="E-mail Address">
+									         	<span class="input-group-addon usericon"><i class="fa fa-envelope"></i></span>
+									       </div>
+									       <br>
+									       <div class="input-group input-group-lg">
+									          	<input type="password" class="form-control fullname" placeholder="Password">
+									           <span class="input-group-addon usericon"><i class="fa fa-lock"></i></span>
+									        </div>
+									        <br>
+									 		<div class="row">
+									 			<div class="col-md-7">
+									 				<h5 class="forgot">Forgot Password?</h5>
+									 			</div>
+									 			<button class="btn btn-default loginbtn1 col-md-4 pull-right">LOGIN</button>
+									 		</div>
+									  	</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
